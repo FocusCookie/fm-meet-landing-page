@@ -233,6 +233,10 @@ h1 {
   line-height: 36px;
 }
 
+.third-article {
+  gap: var(--distance-3);
+}
+
 /* Tablet View */
 @media screen and (min-width: 414px) {
   section {
@@ -279,6 +283,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     width: max(573px);
+    gap: var(--distance-4);
   }
   .third-article-h1 {
     margin-left: auto;
@@ -319,5 +324,100 @@ h1 {
     line-height: 26px;
     letter-spacing: 4px;
     text-transform: uppercase;
+  }
+}
+
+/* Desktop View */
+@media screen and (min-width: 768px) {
+  .img-content-img {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 48px;
+    text-align: center;
+  }
+
+  .img-hero {
+    display: none;
+  }
+  .img-hero-left {
+    display: block;
+    height: 303px;
+    width: 394px;
+    background-image: url("../assets/desktop/image-hero-left.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+  }
+  .img-hero-right {
+    display: block;
+    height: auto;
+    width: 394px;
+    background-image: url("../assets/desktop/image-hero-right.png");
+    background-repeat: no-repeat;
+  }
+
+  .first-article {
+    width: 540px;
+  }
+  .first-article-h1 {
+    width: 445px;
+  }
+
+  .sec-article {
+    width: max(540px);
+    word-wrap: break-word;
+  }
+  .sec-article-h1 {
+    font-size: 40px;
+    line-height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    width: max(445px);
+  }
+
+  .third-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: flex-start;
+    justify-items: center;
+    width: max(1110px);
+    padding: 0 var(--distance-3);
+  }
+  .third-article-h1 {
+    text-align: start;
+    font-size: 40px;
+    line-height: 44px;
+    width: max(445px);
+    margin: 0;
+  }
+  .text-size-2 {
+    text-align: start;
+  }
+
+  * {
+    font-size: 18px;
+  }
+  p,
+  h1 {
+    padding: 0;
+  }
+  h1 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .img-wall {
+    max-width: 1110px;
+    padding: 92px 0 72px 0;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    gap: 30px;
+  }
+  .img-item {
+    width: max(255px);
+  }
+
+  .img-bg {
+    background-image: url("../assets/desktop/image-footer.jpg");
   }
 }
