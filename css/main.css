@@ -328,7 +328,7 @@ h1 {
 }
 
 /* Desktop View */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .img-content-img {
     display: flex;
     flex-direction: row;
